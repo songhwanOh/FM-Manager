@@ -46,8 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const reviewsList = document.createElement("ul");
         for (let i = 0; i < reviewData.length; i++) {
           const review = reviewData[i];
+          const reviewName = review.name.trim(); // Trim leading/trailing whitespace
           const listItem = document.createElement("li");
-          listItem.textContent = `${review.name}'s Review`;
+          listItem.textContent = `${reviewName}'s Review`;
           listItem.setAttribute("data-index", i);
           reviewsList.appendChild(listItem);
         }
@@ -104,26 +105,29 @@ document.addEventListener("DOMContentLoaded", function () {
     newReviewForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const name = document.getElementById("name").value;
+        const name = document.getElementById("name").value.trim();
         const date = document.getElementById("date").value;
         const rating = parseInt(document.getElementById("rating").value);
-        const review = document.getElementById("review").value;
+        const review = document.getElementById("review").value.trim();
 
-        // Create a new review object
-        const newReview = { name, date, rating, review };
-
-        // Add the new review to the reviewData array
-        reviewData.push(newReview);
-
-        // Clear the existing review cards
-        clearReviewCards();
-
-        // Generate the updated review cards
-        generateReviewLinks();
-        showReviewCard(newReview);
-
-        // Reset the form inputs
-        newReviewForm.reset();
+        if (name && review) {
+          
+          // Create a new review object
+          const newReview = { name, date, rating, review };
+          
+          // Add the new review to the reviewData array
+          reviewData.push(newReview);
+          
+          // Clear the existing review cards
+          clearReviewCards();
+          
+          // Generate the updated review cards
+          generateReviewLinks();
+          showReviewCard(newReview);
+          
+          // Reset the form inputs
+          newReviewForm.reset();
+        }
     });
 });
   
