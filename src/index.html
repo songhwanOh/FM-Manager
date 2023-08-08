@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Manager - Home</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-container">
+        <img src="FMlogo.png" alt="Football Manager Logo" id="logo" />
+        <h1 style="text-align: center">Football Manager</h1>
+        <p>Experience the thrill of managing your own football team!</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Game Info</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container">
+        <h2>Experience the Ultimate Football Management Simulation</h2>
+        <p>
+          Welcome to Football Manager, the world's most immersive and authentic
+          football management simulation game. Step into the shoes of a football
+          team manager and take charge of your favorite club to lead them to
+          glory.
+        </p>
+        <div class="image-container">
+          <img
+            src="https://assetsio.reedpopcdn.com/FM23-Hero-Key-Art-1.png?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+            alt="Game Image"
+          />
+        </div>
+        <br />
+        <p>
+          In Football Manager, you have complete control over all aspects of the
+          club's operations. Make strategic decisions on team selection,
+          tactics, transfers, training, and more as you aim to build a winning
+          team and achieve greatness in the footballing world.
+        </p>
+        <p>
+          Experience the pressure of match days as you watch your team play in
+          realistic 3D or text mode, making in-game adjustments to outwit the
+          opposition. Off the pitch, navigate the challenges of media
+          interactions, contract negotiations, and financial management to keep
+          the club thriving.
+        </p>
+        <p>
+          Will you steer your team to domestic and international glory, becoming
+          a legendary football manager in the process? The fate of your club is
+          in your hands.
+        </p>
+        <br />
+        <!-- Add any relevant images or media here -->
+        <div class="video-container">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/ISJxT7VLzYg"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <br />
+        <form id="Subscription" action="https://httpbin.org/post" method="post">
+          <h2>Join Our Newsletter</h2>
+          <!-- email input -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <!-- hidden name -->
+          <input type="hidden" id="name" name="name" value="Song Hwan Oh" />
+          <br />
+          <!-- join button -->
+          <button type="submit">Join</button>
+        </form>
+      </main>
+      <!-- JavaScript Data Files -->
+      <script src="./js/data.js"></script>
+      <script src="./js/script.js"></script>
+      <footer>
+        <br />
+        <div style="text-align: center">
+          <a href="#top">Go to Top</a>
+        </div>
+        <br />
+        <div style="text-align: center">
+          &copy; 2023. &nbsp;ALL RIGHTS RESERVED
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

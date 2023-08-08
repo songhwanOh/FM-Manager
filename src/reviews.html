@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Reviews</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-container">
+        <img src="FMlogo.png" alt="Football Manager Logo" id="logo" />
+        <h1 style="text-align: center">Football Manager</h1>
+        <p>Experience the thrill of managing your own football team!</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Game Info</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container">
+        <!-- Review cards will be dynamically generated here -->
+        <h2>User Reviews</h2>
+        <div id="reviewSection">
+          <div id="reviewLinks"></div>
+        </div>
+
+        <div id="newReviewContainer">
+          <h2>Add a New Review</h2>
+          <form id="newReviewForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required />
+
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" min="1" max="5" required />
+
+            <label for="review">Review:</label>
+            <textarea id="review" rows="4" required></textarea>
+
+            <button type="submit">Create</button>
+          </form>
+        </div>
+      </main>
+      <script src="js/data.js"></script>
+      <script src="js/script.js"></script>
+
+      <footer>
+        <br />
+        <div style="text-align: center">
+          <a href="#top">Go to Top</a>
+        </div>
+        <br />
+        <div style="text-align: center">
+          &copy; 2023. &nbsp;ALL RIGHTS RESERVED
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
