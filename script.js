@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return card;
       }
       
-  
+      
     function generateRatingStars(rating) {
       const fullStars = "★".repeat(rating);
       const emptyStars = "☆".repeat(5 - rating);
