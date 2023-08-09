@@ -210,7 +210,7 @@ body {
 
 @media screen and (max-width: 400px) {
   /* Adjust the container padding and max-width */
-  .container {
+  .main-container {
     padding: 0 10px;
     max-width: 100%;
   }
