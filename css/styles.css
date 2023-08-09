@@ -2,6 +2,18 @@
 /* h1, h2, h3, h4, h5, h6 {
   font-family: 'Bebas Neue', sans-serif;
 } */
+a.citationlink {
+  color: white;
+  /* text-decoration: none; */
+}
+
+a.citationlink:visited {
+  color: white;
+}
+
+a.citationlink:hover {
+  color: aliceblue;
+}
 
 .container {
   /* max-width: 1200px;  */
@@ -116,17 +128,20 @@ body {
 
   /* main */
   main {
-    background-color:#fff;
-    /* color: #fff; */
+    /* background-color:#fff; */
+    color: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  
+  main nav a {
+    color: #fff;
+  }
   
   .review-card {
-    background-color: #fff;
+    /* background-color: #fff; */
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -142,7 +157,8 @@ body {
   }
   
   form {
-    background-color: #fff;
+    /* background-color: #fff; */
+    color: #fff;
     max-width: 300px;
     margin: 10px auto;
   }
