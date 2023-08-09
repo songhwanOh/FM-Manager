@@ -124,7 +124,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    max-width: 300px;
+    width: 300px;
     flex: 1;
   }
   
