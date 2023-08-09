@@ -60,6 +60,5 @@ window.reviewData = [
       rating: 5,
       review: "Thumbs up!"
     },
-    // Add more review objects here...
   ];
   
