@@ -156,7 +156,7 @@ body {
 
   .bottomDiv {
     text-align: center;
-    padding: 10px; /* Add this line */
+    padding: 10px;
   }
   
   .youtubeDiv{
@@ -164,11 +164,8 @@ body {
     height:100%;
     border:0; 
   }
-  /* .main-container{
-    width: 1000px;
-  } */
 
-  
+
   /* video container */
   .video-container {
     position: relative;
@@ -207,25 +204,9 @@ body {
   }
   
   footer a {
-    color: #fff; /* Text color on the footer background */
+    color: #fff; 
   }
 
-  /* @media screen and (max-width: 400px) {
-    .container {
-      padding: 0 10px;
-    }
-    main {
-      padding: 10px;
-    }
-    
-    .review-card {
-      max-width: 100%;
-    }
-    
-    form {
-      max-width: 100%;
-    }
-  }   */
 
 @media screen and (max-width: 400px) {
   /* Adjust the container padding and max-width */
