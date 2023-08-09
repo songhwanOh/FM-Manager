@@ -272,3 +272,60 @@ body {
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  /* Adjust the container padding and max-width */
+  .container {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+  .main-container {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  /* Adjust the header container width and padding */
+  .header-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Center-align the header elements */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo {
+    margin: 10px 0; /* Adjust margins for spacing */
+  }
+
+  header h1 {
+    margin-top: 10px; /* Add spacing to the top */
+  }
+  
+  header p {
+    margin: 5px 0; /* Adjust paragraph margin for spacing */
+  }
+
+  /* Adjust the main container padding */
+  main {
+    padding: 10px;
+  }
+
+  .bottomDiv {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  /* Adjust the review card width */
+  .review-card {
+    max-width: 100%;
+    width: auto;
+  }
+  
+  /* Adjust form max-width */
+  form {
+    max-width: 100%;
+  }
+}
