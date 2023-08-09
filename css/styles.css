@@ -210,6 +210,10 @@ body {
 
 @media screen and (max-width: 400px) {
   /* Adjust the container padding and max-width */
+  .container {
+    padding: 0 10px;
+    max-width: 100%;
+  }
   .main-container {
     padding: 0 10px;
     max-width: 100%;
@@ -242,6 +246,11 @@ body {
   /* Adjust the main container padding */
   main {
     padding: 10px;
+  }
+
+  .bottomDiv {
+    padding: 0 10px;
+    max-width: 100%;
   }
 
   /* Adjust the review card width */
