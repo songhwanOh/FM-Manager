@@ -1,7 +1,7 @@
 /* font */
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-family: 'Bebas Neue', sans-serif;
-}
+} */
 
 .container {
   /* max-width: 1200px;  */
@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 1100px;
   margin: 0 0px; 
   padding: 0 80px;
+  
 }
 
 /* Style for images and videos within the container */
@@ -80,6 +81,7 @@ body {
     margin: 0;
     font-size: 32px;
     margin-top: 10px;
+    font-family: 'Bebas Neue', sans-serif;
   }
   
   header p {
@@ -166,7 +168,49 @@ body {
     width: 1000px;
   } */
 
-  @media screen and (max-width: 400px) {
+  
+  /* video container */
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 56.25%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* image container */
+  .image-container{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #190A28CC; /* Main color for footer section */
+    padding: 10px;
+    text-align: center;
+    /* position: relative; */
+    /* bottom: 0;
+    width: 100%; */
+  }
+  
+  footer a {
+    color: #fff; /* Text color on the footer background */
+  }
+
+  /* @media screen and (max-width: 400px) {
     .container {
       padding: 0 10px;
     }
@@ -181,45 +225,52 @@ body {
     form {
       max-width: 100%;
     }
-  }  
+  }   */
 
-  /* video container */
-.video-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding-bottom: 56.25%;
-}
+@media screen and (max-width: 400px) {
+  /* Adjust the container padding and max-width */
+  .container {
+    padding: 0 10px;
+    max-width: 100%;
+  }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+  /* Adjust the header container width and padding */
+  .header-container {
+    width: 100%;
+    padding: 0 10px;
+  }
 
-/* image container */
-.image-container{
-  max-width: 100%;
-  height: auto;
-}
+  /* Center-align the header elements */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.image-container img {
-  width: 100%;
-  height: auto;
-}
+  #logo {
+    margin: 10px 0; /* Adjust margins for spacing */
+  }
 
-/* footer */
-footer {
-  background-color: #190A28CC; /* Main color for footer section */
-  padding: 10px;
-  text-align: center;
-  /* position: relative; */
-  /* bottom: 0;
-  width: 100%; */
-}
+  header h1 {
+    margin-top: 10px; /* Add spacing to the top */
+  }
+  
+  header p {
+    margin: 5px 0; /* Adjust paragraph margin for spacing */
+  }
 
-footer a {
-  color: #fff; /* Text color on the footer background */
+  /* Adjust the main container padding */
+  main {
+    padding: 10px;
+  }
+
+  /* Adjust the review card width */
+  .review-card {
+    max-width: 100%;
+    width: auto;
+  }
+  
+  /* Adjust form max-width */
+  form {
+    max-width: 100%;
+  }
 }
